@@ -61,4 +61,10 @@ function numero_paginas($post_por_pagina, $conexion){
 
 }
 
+function comprobarSession(){
+    if(isset($_SESSION['admin'])){
+        header('Location:' . RUTA);
+    }
+}
+
 ?>
