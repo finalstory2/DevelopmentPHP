@@ -9,7 +9,7 @@
             <article>
                 <h2 class="titulo"><?php echo $post['id'] . '.-' . $post['titulo']?></h2>
                 <a href="editar.php?id=<?php echo $post['id'] ?>">Editar</a>
-                <a href=",,/single.php?id=<?php echo $post['id'] ?>">Ver</a>
+                <a href="<?php echo RUTA . 'single.php?id=' . $post['id'] ?>">Ver</a>
                 <a href="borrar.php?id=<?php echo $post['id'] ?>">Borrar</a>
             </article>
         </div>
